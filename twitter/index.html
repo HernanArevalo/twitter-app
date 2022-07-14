@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel=”stylesheet” href=”https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css”>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+    </script>
+    <!--JQUERY-->
+    <script src="js/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <!--MOMENT JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es.js"></script>
+
+
+</head>
+
+<body>
+    <script src="main.js"></script>
+    <div class="content">
+        <!--Left-->
+        <div class="left">
+            <a href="#">
+                <div class="twLogoNav">
+                    <i class='bx bxl-twitter'></i>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="inicioNav leftItem">
+                    <div>
+                        <i class='bx bx-home-circle'></i>
+                        <span class="leftItemText">Inicio</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="inicioNav leftItem">
+                    <div>
+                        <i class='bx bx-hash'></i>
+                        <span class="leftItemText">Explorar</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="inicioNav leftItem">
+                    <div>
+                        <i class='bx bx-bell'></i>
+                        <span class="leftItemText">Notificaciones</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="inicioNav leftItem">
+                    <div>
+                        <i class='bx bx-envelope'></i>
+                        <span class="leftItemText">Mensajes</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="inicioNav leftItem">
+                    <div>
+                        <i class='bx bx-bookmark'></i>
+                        <span class="leftItemText">Guardados</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="inicioNav leftItem">
+                    <div>
+                        <i class='bx bx-detail'></i>
+                        <span class="leftItemText">Listas</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="inicioNav leftItem">
+                    <div>
+                        <i class='bx bx-user'></i>
+                        <span class="leftItemText">Perfil</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="inicioNav leftItem">
+                    <div>
+                        <i class='bx bx-dots-horizontal-rounded'></i>
+                        <span class="leftItemText">Más opciones</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="btnTwittear">
+                    <button class="leftItemTwittear">Twittear</button>
+                </div>
+            </a>
+
+
+        </div>
+        <!--Center-->
+        <div class="center">
+            <div class="topCenter">
+                <h3>Tweets más Recientes</h3>
+            </div>
+            <div class="tweets">
+            </div>
+            <div class="centerTweet">
+                <div class="centerTweet1">
+                    <img src="files/profile.png" alt="profile picture">
+                </div>
+                <div class="centerTwittear2">
+                    <div>
+                        <input id="tweetInput" type="text" placeholder="¿Qué está pasando?">
+                    </div>
+                    <div class="centerTwittear22">
+                        <a href="">
+                            <div>
+                                <i class='bx bx-world'></i>
+                                <span>Cualquier persona puede responder</span>
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="centerTwittear23">
+                        <div class="centerTwittear23icons">
+                            <a href="">
+                                <div class="centerTwittear23icon">
+                                    <i class='bx bx-image-alt'></i>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="centerTwittear23icon">
+                                    <i class='bx bxs-file-gif'></i>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="centerTwittear23icon">
+                                    <i class='bx bx-bar-chart-alt-2 bx-rotate-90'></i>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="centerTwittear23icon">
+                                    <i class='bx bx-smile'></i>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="centerTwittear23icon">
+                                    <i class='bx bx-calendar-event'></i>
+                                </div>
+                            </a>
+
+
+                        </div>
+                        <div id="centerTwittear23TwittearDiv">
+                            <button id="centerTwittearbtn">Twittear</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="centerTweets">
+                <div class="tweet">
+                    <div class="centerTweetTop">
+                        <div class="centerTweet1">
+                            <img src="files/profile-tweet1.png" alt="profile picture">
+                        </div>
+                        <div class="centerTweet2">
+                            <div class="userTweet">
+                                <div class="user1">
+                                    <div class="user1-1">
+                                        <a href="#"><span>LAVOZcomar</span></a>
+                                    </div>
+                                    <div class="user1-2">
+                                        <a href="#"><span>@LAVOZcomar</span></a>
+                                    </div>
+                                    <div class="user1-3">
+                                        <span>•</span>
+                                    </div>
+                                    <div class="user1-4">
+                                        <a href="#"><span>15min</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tweetContent">
+                                <span>Valoyes y la ovación, en el juego más difícil de su ciclo en </span>
+                                <span class="hashtag"><a href="">#Talleres</a></span>
+                            </div>
+                            <div class="tweetLink">
+                                <a href="#">
+                                    <div class="tweetLinkImage">
+                                        <img src="files/tweet-picture.png" alt="">
+                                    </div>
+                                    <div class="tweetLinkText">
+                                        <div class="tweetLinkPage">
+                                            <span>lavoz.com.ar</span>
+                                        </div>
+                                        <div class="tweetLinkTitle">
+                                            <span>Valoyes y la ovación, en el juego más dificil de su ciclo en talleres
+                                                |
+                                                Futbol
+                                                de Primera</span>
+                                        </div>
+                                        <div class="tweetLinkContent">
+                                            <span>La ovación al dejar la cancha fue el capítulo esperado de su
+                                                reencuentro
+                                                con la masa, la que se había perdido su explosión.</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tweetIcons">
+                        <div class="tweetComment tweetIcon">
+                            <img class="" src="files/chat.png" alt="">
+                            <div class="tweetIconsSpan"><span>1</span></div>
+                        </div>
+                        <div class="tweetRetweet tweetIcon">
+                            <img class="" src="files/retweet-arrows.png" alt="">
+                            <div class="tweetIconsSpan"><span>3</span></div>
+                        </div>
+                        <div class="tweetFav tweetIcon">
+                            <img class="" src="files/heart.png" alt="">
+                            <div class="tweetIconsSpan"><span></span></div>
+                        </div>
+                        <div class="tweetShare tweetIcon">
+                            <img class="" src="files/upload.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="tweet">
+                    <div class="centerTweetTop">
+                        <div class="centerTweet1">
+                            <img src="files/solpereyra.jpg" alt="profile picture">
+                        </div>
+                        <div class="centerTweet2">
+                            <div class="userTweet">
+                                <div class="user1">
+                                    <div class="user1-1">
+                                        <a href=""><span>solcito</span></a>
+                                    </div>
+                                    <div class="user1-2">
+                                        <a href=""><span>@solpereyra</span></a>
+                                    </div>
+                                    <div class="user1-3">
+                                        <span>•</span>
+                                    </div>
+                                    <div class="user1-4">
+                                        <a href=""><span>25min</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tweetContent">
+                                <span>martes pero a qué costo</span>
+                                <span class="hashtag"><a href=""></a></span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="tweetIcons2">
+                        <div class="tweetComment tweetIcon">
+                            <img class="" src="files/chat.png" alt="">
+                            <div class="tweetIconsSpan"><span></span></div>
+                        </div>
+                        <div class="tweetRetweet tweetIcon">
+                            <img class="" src="files/retweet-arrows.png" alt="">
+                            <div class="tweetIconsSpan"><span></span></div>
+                        </div>
+                        <div class="tweetFav tweetIcon">
+                            <img class="" src="files/heart.png" alt="">
+                            <div class="tweetIconsSpan"><span></span></div>
+                        </div>
+                        <div class="tweetShare tweetIcon">
+                            <img class="" src="files/upload.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="tweet">
+                    <div class="centerTweetTop">
+                        <div class="centerTweet1">
+                            <img src="files/KEo9sgTJ_400x400.jpg" alt="profile picture">
+                        </div>
+                        <div class="centerTweet2">
+                            <div class="userTweet">
+                                <div class="user1">
+                                    <div class="user1-1">
+                                        <a href=""><span>TyC Sports</span></a>
+                                    </div>
+                                    <div class="user1-2">
+                                        <a href=""><span>@TyCSports</span></a>
+                                    </div>
+                                    <div class="user1-3">
+                                        <span>•</span>
+                                    </div>
+                                    <div class="user1-4">
+                                        <a href=""><span>36min</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tweetContent">
+                                <span>Delbonis no puede salir de su mala racha y perdió en San Petersburgo Pelota de
+                                    tenis</span>
+                                <span class="hashtag"><a href="">#Talleres</a></span>
+                            </div>
+                            <div class="tweetLink">
+                                <a href="#">
+                                    <div class="tweetLinkImage">
+                                        <img src="files/delbonis_862x485.jpg" alt="">
+                                    </div>
+                                    <div class="tweetLinkText">
+                                        <div class="tweetLinkPage">
+                                            <span>lavoz.com.ar</span>
+                                        </div>
+                                        <div class="tweetLinkTitle">
+                                            <span>La tremenda racha negativa de Federico Delbonis - TyC Sports</span>
+                                        </div>
+                                        <div class="tweetLinkContent">
+                                            <span>El tenista de Azul cayó contra el español Andújar por 6-2 y 7-6 y
+                                                acumula nueve derrotas consecutivas</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tweetIcons">
+                        <div class="tweetComment tweetIcon">
+                            <img class="" src="files/chat.png" alt="">
+                            <div class="tweetIconsSpan"><span>1</span></div>
+                        </div>
+                        <div class="tweetRetweet tweetIcon">
+                            <img class="" src="files/retweet-arrows.png" alt="">
+                            <div class="tweetIconsSpan"><span>1</span></div>
+                        </div>
+                        <div class="tweetFav tweetIcon">
+                            <img class="" src="files/heart.png" alt="">
+                            <div class="tweetIconsSpan"><span>23</span></div>
+                        </div>
+                        <div class="tweetShare tweetIcon">
+                            <img class="" src="files/upload.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="tweet">
+                    <div class="centerTweetTop">
+                        <div class="centerTweet1">
+                            <img src="files/profile-tweet1.png" alt="profile picture">
+                        </div>
+                        <div class="centerTweet2">
+                            <div class="userTweet">
+                                <div class="user1">
+                                    <div class="user1-1">
+                                        <a href=""><span>LAVOZcomar</span></a>
+                                    </div>
+                                    <div class="user1-2">
+                                        <a href=""><span>@LAVOZcomar</span></a>
+                                    </div>
+                                    <div class="user1-3">
+                                        <span>•</span>
+                                    </div>
+                                    <div class="user1-4">
+                                        <a href=""><span>37min</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tweetContent">
+                                <span>Ciudades y puntos turísticos del país están interconectados con las vías de
+                                    tren. Los lugares, trayectos y tarifas para recorrer este verano.
+                                </span>
+                            </div>
+                            <div class="tweetLink">
+                                <a href="">
+                                    <div class="tweetLinkImage">
+                                        <img src="files/lavoz-vacaciones.jpg" alt="">
+                                    </div>
+                                    <div class="tweetLinkText">
+                                        <div class="tweetLinkPage">
+                                            <span>lavoz.com.ar</span>
+                                        </div>
+                                        <div class="tweetLinkTitle">
+                                            <span>Vacaciones de verano en Argentina: adónde podés viajar en tren y
+                                                cuá...</span>
+                                        </div>
+                                        <div class="tweetLinkContent">
+                                            <span>Ciudades y puntos turísticos del país están interconectados con
+                                                lasvías de
+                                                tren.
+                                                Los lugares, trayectos y tarifas para recorrer este verano.</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tweetIcons">
+                        <div class="tweetComment tweetIcon">
+                            <img class="" src="files/chat.png" alt="">
+                            <div class="tweetIconsSpan"><span></span></div>
+                        </div>
+                        <div class="tweetRetweet tweetIcon">
+                            <img class="" src="files/retweet-arrows.png" alt="">
+                            <div class="tweetIconsSpan"><span></span></div>
+                        </div>
+                        <div class="tweetFav tweetIcon">
+                            <img class="" src="files/heart.png" alt="">
+                            <div class="tweetIconsSpan"><span></span></div>
+                        </div>
+                        <div class="tweetShare tweetIcon">
+                            <img class="" src="files/upload.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Right-->
+
+        <div class="right">
+            <div class="search">
+                <i class='bx bx-search'></i>
+                <input type="text" placeholder="Buscar en Twitter">
+            </div>
+            <div class="trends">
+                <div class="titleTrends">
+                    <span>Qué está pasando</span>
+                </div>
+                <a href="#">
+                    <div class="trend">
+                        <div class="trendText">
+                            <div class="trendTitle">
+                                <span>Espacio</span>
+                                <span>•</span>
+                                <span>EN DIRECTO</span>
+                            </div>
+                            <div class="trendContent">
+                                <span>William Shatner viaja al espacio en un vuelo de Blue Origin</span>
+                            </div>
+                        </div>
+                        <div class="trendRightPart">
+                            <div class="trendPicture">
+                                <img src="files/trendpicture1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="trend">
+                        <div class="trendText">
+                            <div class="trendTitle">
+                                <span>Fútbol</span>
+                                <span>•</span>
+                                <span>Tendencia</span>
+                            </div>
+                            <div class="trendContent">
+                                <span>Heinze</span>
+                            </div>
+                        </div>
+                        <div class="trendRightPart">
+                            <div class="trendMoreOptions">
+                                <i class='bx bx-dots-horizontal-rounded'></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="trend">
+                        <div class="trendText">
+                            <div class="trendTitle">
+                                <span>Tendencia en Argentina</span>
+
+                            </div>
+                            <div class="trendContent">
+                                <span>Camilo</span>
+                            </div>
+                            <div class="trendTitle">
+                                <span>1.726 Tweets</span>
+
+                            </div>
+                        </div>
+                        <div class="trendRightPart">
+                            <div class="trendMoreOptions">
+                                <i class='bx bx-dots-horizontal-rounded'></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="trend">
+                        <div class="trendText">
+                            <div class="trendTitle">
+                                <span>Tendencia en Argentina</span>
+
+                            </div>
+                            <div class="trendContent">
+                                <span>Vigo</span>
+                            </div>
+                            <div class="trendTitle">
+                                <span>5.146 Tweets</span>
+
+                            </div>
+                        </div>
+                        <div class="trendRightPart">
+                            <div class="trendMoreOptions">
+                                <i class='bx bx-dots-horizontal-rounded'></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="mostrarMas">
+                        <span>Mostrar Más</span>
+                    </div>
+                </a>
+            </div>
+            <div class="trends">
+                <div class="titleTrends">
+                    <span>A quién seguir</span>
+                </div>
+                <a href="#">
+                    <div class="toFollow">
+                        <div class="toFollowPicture">
+                            <img src="files/ellitoral.png" alt="">
+                        </div>
+                        <div class="toFollowUser">
+                            <span class="toFollowUserName">El Litoral</span>
+                            <span class="toFollowUserArroba">@ellitoral</span>
+                        </div>
+                        <div class="toFollowBtn">
+                            <div class="toFollowBtnBtn">
+                                <span class="toFollowBtnBtnSpan">Seguir</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="toFollow">
+                        <div class="toFollowPicture">
+                            <img src="files/viacordoba.png" alt="">
+                        </div>
+                        <div class="toFollowUser">
+                            <span class="toFollowUserName">Vía Córdoba</span>
+                            <span class="toFollowUserArroba">@ViaCordobaOk</span>
+                        </div>
+                        <div class="toFollowBtn">
+                            <div class="toFollowBtnBtn">
+                                <span class="toFollowBtnBtnSpan">Seguir</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="toFollow">
+                        <div class="toFollowPicture">
+                            <img src="files/kevinromero.jpg" alt="">
+                        </div>
+                        <div class="toFollowUser">
+                            <span class="toFollowUserName">Kevin</span>
+                            <span class="toFollowUserArroba">@kevinromero...</span>
+                        </div>
+                        <div class="toFollowBtn">
+                            <div class="toFollowBtnBtn">
+                                <span class="toFollowBtnBtnSpan">Seguir</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="mostrarMas">
+                        <span>Mostrar Más</span>
+                    </div>
+                </a>
+            </div>
+            <div class="rightBottom">
+                <a href="#">Condiciones de Servicio</a>
+                <a href="#">Política de Privacidad</a><br>
+                <a href="#">Política de cookies</a>
+                <a href="#">Información de anuncios</a><br>
+                <a href="#">Más opciones •••</a>
+                <a href="#">© 2021 Twitter, Inc.</a>
+            </div>
+        </div>
+
+    </div>
+    <div id="twittearWindow">
+        <div class="twittearWindow2">
+            <div class="closeWindow">
+                <i class='bx bx-x'></i>
+            </div>
+            <div class="twittearWindow3">
+                <div class="centerTweet1">
+                    <img src="files/profile.png" alt="profile picture">
+                </div>
+                <div class="centerTwittear2 inputWindowTwittear">
+                    <div>
+                        <input id="inputWindowTwittear" type="text" placeholder="¿Qué está pasando?">
+                    </div>
+                    <div class="centerTwittear22">
+                        <a href="">
+                            <div>
+                                <i class='bx bx-world'></i>
+                                <span>Cualquier persona puede responder</span>
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="centerTwittear23">
+                        <div class="centerTwittear23icons">
+                            <a href="">
+                                <div class="centerTwittear23icon">
+                                    <i class='bx bx-image-alt'></i>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="centerTwittear23icon">
+                                    <i class='bx bxs-file-gif'></i>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="centerTwittear23icon">
+                                    <i class='bx bx-bar-chart-alt-2 bx-rotate-90'></i>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="centerTwittear23icon">
+                                    <i class='bx bx-smile'></i>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="centerTwittear23icon">
+                                    <i class='bx bx-calendar-event'></i>
+                                </div>
+                            </a>
+
+
+                        </div>
+                        <div id="centerTwittear23TwittearDiv">
+                            <button id="centerTwittearbtn">Twittear</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
+
+<!-- 
+    COLORES
+PRINCIPAL:  rgb(21, 32, 43)
+TT:         rgb(25, 39, 53)
+TT HOVER:   rgb(32, 46, 58)
+BUSCADOR:    rgb(37, 51, 65)
+NAV HOVER: rgb(44, 54, 64)
+
+BORDES:    rgb(56, 68, 77)
+TEXTOS:     rgb(125, 141, 154)
+ -->
