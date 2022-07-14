@@ -25,7 +25,7 @@ export const Navbar = () => {
                     </div>
                 </div>
             </NavLink>
-            <NavLink to="home">
+            <NavLink to="explore">
                 <div className="inicioNav leftItem">
                     <div>
                         <i className='bx bx-hash'></i>
@@ -33,7 +33,7 @@ export const Navbar = () => {
                     </div>
                 </div>
             </NavLink>
-            <NavLink to="home">
+            <NavLink to="notifications">
                 <div className="inicioNav leftItem">
                     <div>
                         <i className='bx bx-bell'></i>
@@ -41,7 +41,7 @@ export const Navbar = () => {
                     </div>
                 </div>
             </NavLink>
-            <NavLink to="home">
+            <NavLink to="messages">
                 <div className="inicioNav leftItem">
                     <div>
                         <i className='bx bx-envelope'></i>
