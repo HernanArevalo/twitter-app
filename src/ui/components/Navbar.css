@@ -20,6 +20,10 @@
     margin-bottom: 10px;
 }
 
+.twLogoNav:hover {
+    background-color: #283b4e;
+
+}
 .twLogoNav i {
 
     margin: auto;
@@ -111,7 +115,7 @@ i{
     text-decoration: none;
 }
 
-.active > div > div > span{
+.active > div > div{
     font-weight: 700;
 }
 
