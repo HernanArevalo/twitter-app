@@ -1,0 +1,345 @@
+
+.center {
+    width: 600px;
+    background: #15202B;
+    border-left: 1px solid rgb(63, 72, 78);
+    border-right: 1px solid rgb(63, 72, 78);
+    margin-right: 25px;
+    position: relative;
+
+}
+
+
+.topCenter {
+    padding: auto 0;
+    height: 53px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: #15202B;
+    font-size: 17px;
+    border-bottom: 1px solid rgb(63, 72, 78);
+
+}
+
+.topCenter h3 {
+    margin-left: 20px;
+}
+
+.centerTweet, .twittearWindow3 {
+    display: flex;
+    flex-direction: row;
+    padding: 0 16px;
+    padding-top: 10px;
+    border-bottom: 1px solid rgb(63, 72, 78);
+    padding-bottom: 15px;
+
+}
+
+.centerTweet1 {
+    background: none;
+    width: 60px;
+
+
+}
+
+.centerTweet1 img {
+    width: 48px;
+    height: 48px;
+    border-radius: 9999px;
+    margin-right: 12px;
+    padding-top: 4px;
+}
+
+.centerTwittear2 {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 4px;
+
+}
+
+#tweetInput {
+    text-decoration: none;
+    background: #15202B;
+    border: 0px;
+    border-radius: 0px;
+    margin: 0;
+    height: 56px;
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    border-style: none;
+}
+
+
+
+#tweetInput::placeholder {
+    color: rgb(136, 153, 166);
+}
+
+#tweetInput:focus-within {
+    outline: none;
+}
+
+/* * 22 * Cualquier persona puede responer*/
+
+.centerTwittear22 {
+    height: 37px;
+    background: #15202B;
+    border-bottom: 1px solid rgb(63, 72, 78);
+    padding-bottom: 5px;
+}
+
+.centerTwittear22 a {
+    text-decoration: none;
+}
+
+.centerTwittear22 a div {
+    display: flex;
+    height: 22px;
+    width: 270px;
+    border-radius: 999px;
+    align-items: center;
+    justify-content: center;
+    transition: .2s;
+}
+
+.centerTwittear22 a div:hover {
+    background: rgba(255, 23, 131, 0.1);
+
+}
+
+
+.centerTwittear22 a i {
+    color: rgba(255, 23, 131, 1);
+
+}
+
+.centerTwittear22 a span {
+    color: rgba(255, 23, 131, 1);
+    font-size: 14px;
+
+}
+
+/* * 23*/
+
+.centerTwittear23 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.centerTwittear23icons {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.centerTwittear23icons a {
+    text-decoration: none;
+    border-radius: 9999px;
+    transition: 0.2s;
+
+}
+
+.centerTwittear23icon {
+    font-size: 20px;
+    height: 36px;
+    width: 36px;
+    border-radius: 999px;
+    display: flex;
+
+}
+
+.centerTwittear23icon i {
+    margin: auto;
+    color: rgba(255, 23, 131, 1);
+    ;
+
+}
+
+.centerTwittear23icons a:hover {
+    background: rgba(255, 23, 131, 0.1);
+
+}
+
+#centerTwittear23TwittearDiv{
+    opacity: 0.5;
+
+}
+#centerTwittearbtn{
+    background: transparent;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    margin: auto;
+    cursor: pointer;
+    height: 36px;
+    width: 92px;
+    background: rgba(255, 23, 131);
+    border-radius: 999px;
+
+}
+
+
+/* * tweet*/
+
+.tweet {
+    padding: 0 16px;
+    padding-top: 15px;
+    border-bottom: 1px solid rgb(63, 72, 78);
+    padding-bottom: 15px;
+    cursor: pointer;
+
+
+}
+
+.centerTweetTop{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.userTweet {
+    height: 20px;
+}
+
+.user1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.user1-1 {
+    font-weight: 700;
+    margin-right: 4px;
+}
+
+.user1-2 span {
+    color: rgb(136, 153, 166);
+    margin-right: 4px;
+}
+
+.user1-3 span {
+    color: rgb(136, 153, 166);
+    margin-right: 4px;
+
+}
+
+.user1-4 span {
+    color: rgb(136, 153, 166);
+    margin-right: 4px;
+
+}
+
+.tweetContent {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.tweetContent span a {
+    color: rgba(255, 23, 131, 1);
+
+}
+
+.tweetLink {
+    width: 506px;
+    height: 387px;
+    display: flex;
+    border: 1px solid rgb(63, 72, 78);
+    border-radius: 20px;
+}
+
+.tweetLinkImage {
+    height: 264px;
+    overflow: hidden;
+
+}
+
+.tweetLink a {
+    text-decoration: none;
+}
+
+.tweetLink a img {
+    width: 506px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
+}
+
+.tweetLinkText {
+    margin: 12px;
+}
+
+.tweetLinkPage {
+    margin-bottom: 5px;
+    word-wrap: break-word;
+
+}
+
+
+.tweetLinkPage span {
+    color: rgb(136, 153, 166);
+}
+
+.tweetLinkContent{
+    margin-top: 5px;
+    color: rgb(125, 141, 154);
+
+}
+
+.tweetLinkContent span{
+    color: rgb(125, 141, 154);
+
+}
+        /* icons tweet */
+
+.tweetIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+.tweetIcons2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+}
+
+.tweetIcons span{
+    color: rgb(125, 141, 154);
+}
+
+.tweetIcons2 span{
+    color: rgb(125, 141, 154);
+}
+
+.tweetIcon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.tweetIcon img {
+    width: 15px;
+    height: 15px;
+}
+
+.tweetIconsSpan{
+    padding: 0 12px;
+}
+
+/* ! NEW */
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
