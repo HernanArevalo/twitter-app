@@ -36,6 +36,7 @@
     border-radius: 999px;
     transition: 0.2s;
     height: 55px;
+    font-weight: 300;
 
 }
 
@@ -49,7 +50,8 @@
     font-size: 30px;
     line-height: 55px;
     margin: 0 15px;
-    font-weight: 400;
+    font-weight: 300;
+
 
 }
 
@@ -57,7 +59,6 @@
     font-size: 20px;
     line-height: 55px;
     margin-right: 20px;
-    font-weight: 300;
 
 
 }
@@ -66,10 +67,7 @@
     background-color: #283b4e;
 }
 
-.navbar-items a:hover .twLogoNav {
-    background-color: #283b4e;
 
-}
 
 .btnTwittear {
     display: flex;
@@ -112,3 +110,8 @@ i{
     color: #fff;
     text-decoration: none;
 }
+
+.active > div > div > span{
+    font-weight: 700;
+}
+

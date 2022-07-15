@@ -41,15 +41,15 @@ export const Navbar = () => {
                     </div>
                 </div>
             </NavLink>
-            <NavLink to="messages">
+            <NavLink to="messages" className={ ({ isActive }) => `${isActive? 'active':''}`}>
                 <div className="inicioNav leftItem">
                     <div>
-                        <i className='bx bx-envelope'></i>
+                        <i className="bx bx-envelope"></i>
                         <span className="leftItemText">Mensajes</span>
                     </div>
                 </div>
             </NavLink>
-            <NavLink to="home">
+            <NavLink to="">
                 <div className="inicioNav leftItem">
                     <div>
                         <i className='bx bx-bookmark'></i>
@@ -57,7 +57,7 @@ export const Navbar = () => {
                     </div>
                 </div>
             </NavLink>
-            <NavLink to="home">
+            <NavLink to="">
                 <div className="inicioNav leftItem">
                     <div>
                         <i className='bx bx-detail'></i>
@@ -65,7 +65,7 @@ export const Navbar = () => {
                     </div>
                 </div>
             </NavLink>
-            <NavLink to="home">
+            <NavLink to="">
                 <div className="inicioNav leftItem">
                     <div>
                         <i className='bx bx-user'></i>
@@ -73,7 +73,7 @@ export const Navbar = () => {
                     </div>
                 </div>
             </NavLink>
-            <NavLink to="home">
+            <NavLink to="">
                 <div className="inicioNav leftItem">
                     <div>
                         <i className='bx bx-dots-horizontal-rounded'></i>
