@@ -2,7 +2,6 @@
 
 .navbar-items {
     background: transparent;
-    width: 271px;
     display: flex;
     flex-direction: column;
     position: sticky;

@@ -343,3 +343,8 @@ a{
     text-decoration: none;
     color: #fff;
 }
+
+.navbar-items > div{
+    display: flex;
+    flex-direction: column;
+}
