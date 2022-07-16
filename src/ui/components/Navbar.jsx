@@ -50,14 +50,7 @@ export const Navbar = () => {
                                 <i className='bx bx-home-circle'></i>
                             }
 
-                            {
-                                navBarWidth > 250
-                                ?
                                 <span className="leftItemText">Inicio</span>
-
-                                :
-                                null
-                            }
 
                         </div>
                     </div>
