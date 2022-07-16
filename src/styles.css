@@ -3,17 +3,19 @@ body{
     margin: 0;
     color: #fff;
     background-color: #15202B;
-
+    overflow-y: visible;
 }
 
 .container {
     color: #fff;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
-        text-decoration: none;
+    text-decoration: none;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    overflow-y: visible;
+
 }
 
 h1{

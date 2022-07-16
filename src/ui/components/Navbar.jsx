@@ -64,7 +64,9 @@ export const Navbar = () => {
                         <div>
 
                             <i className='bx bx-hash'></i>
-                            <span className="leftItemText">Explorar</span>
+                            <div className="leftItemText">
+                                <span>Explorar</span>
+                            </div>
 
                         </div>
                     </div>
@@ -84,8 +86,10 @@ export const Navbar = () => {
                                 <i className='bx bx-bell'></i>
                             }
 
-                            <span className="leftItemText">Notificaciones</span>
-
+                            <div className="leftItemText">
+                                <span>Notificaciones</span>
+                            </div>
+                            
                         </div>
                     </div>
                 </NavLink>
@@ -104,7 +108,9 @@ export const Navbar = () => {
                                 <i className='bx bx-envelope'></i>
                             }
 
-                            <span className="leftItemText">Mensajes</span>
+                            <div className="leftItemText">
+                                <span>Mensajes</span>
+                            </div>
 
                         </div>
                     </div>
@@ -125,8 +131,9 @@ export const Navbar = () => {
                                 <i className='bx bx-bookmark'></i>
                             }
 
-                            <span className="leftItemText">Guardados</span>
-
+                            <div className="leftItemText">
+                                <span>Guardados</span>
+                            </div>
                         </div>
                     </div>
                 </NavLink>
@@ -146,7 +153,10 @@ export const Navbar = () => {
                                 <i className='bx bx-detail'></i>
                             }
 
-                            <span className="leftItemText">Listas</span>
+                            <div className="leftItemText">
+                                <span>Listas</span>
+                            </div>
+                            
                         </div>
                     </div>
                 </NavLink>
@@ -166,8 +176,9 @@ export const Navbar = () => {
                                 <i className='bx bx-user'></i>
                             }
 
-                            <span className="leftItemText">Perfil</span>
-
+                            <div className="leftItemText">
+                                <span>Perfil</span>
+                            </div>
                         </div>
                     </div>
                 </NavLink>

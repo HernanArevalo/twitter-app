@@ -63,7 +63,8 @@
     line-height: 55px;
     margin-right: 20px;
     transition: all 0.5s ease;
-
+    width: 150px;
+    text-align: left;
 }
 
 .navbar-items a:hover .leftItem {
@@ -118,7 +119,7 @@ i{
 }
 
 @media screen and (max-width: 1350px){
-    .leftItem>div>span{
+    .leftItemText{
         display: none;
     }
 }
