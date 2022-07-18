@@ -1,35 +1,34 @@
-import React from 'react'
+import React from 'react';
+
+import got from 'got';
+import crypto from 'crypto';
+import OAuth from 'oauth-1.0a';
+import qs from 'querystring';
+import readline from 'readline';
 
 export const get_users_with_user_context = () => {
-
-
 
 
     // Get User objects by username, using user authentication
     // https://developer.twitter.com/en/docs/twitter-api/users/lookup/quick-start
 
-
-
-    const got = require('got');
-    const crypto = require('crypto');
-    const OAuth = require('oauth-1.0a');
-    const qs = require('querystring');
-    const readline = require('readline').createInterface({
+    readline.createInterface({
         input: process.stdin,
         output: process.stdout
-    })
+      })
+
 
     // The code below sets the consumer key and consumer secret from your environment variables
     // To set environment variables on macOS or Linux, run the export commands below from the terminal:
-    // export CONSUMER_KEY='YOUR-KEY'
-    // export CONSUMER_SECRET='YOUR-SECRET'
+    // export CONSUMER_KEY='vc1nlhzbnUF5MkjFHydv8npkM'
+    // export CONSUMER_SECRET='L1NzGKHfxuuDKUYNUgAO0DeEE6zDyaUMsaj8X4Vqz2OYZF4LZU'
     const consumer_key = process.env.CONSUMER_KEY;
     const consumer_secret = process.env.CONSUMER_SECRET;
 
     // These are the parameters for the API request
     // specify Tweet IDs to fetch, and any additional fields that are required
     // by default, only the Tweet ID and text are returned
-    const usernames = 'TwitterDev,TwitterAPI' // Edit  usernames to look up
+    const usernames = 'nancito__' // Edit  usernames to look up
     const params = 'user.fields=created_at,description&expansions=pinned_tweet_id' // Edit optional query parameters here
 
     const endpointURL = `https://api.twitter.com/2/users/by?usernames=${usernames}&${params}`;
